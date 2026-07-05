@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Research Papers - FacultyPub</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- JavaScript for search functionality -->
+</head>
+<body>
+
+    <header>
+        <h1>Browse Research Papers</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="upload.html">Upload Paper</a></li>
+                <li><a href="reports.html">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <input type="text" id="searchInput" placeholder="Search by title or author..." onkeyup="searchPapers()">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author(s)</th>
+                    <th>Year</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody id="paperList">
+                <tr>
+                    <td>AI in Healthcare</td>
+                    <td>Dr. John Doe</td>
+                    <td>2024</td>
+                    <td><a href="#">Download PDF</a></td>
+                </tr>
+                <tr>
+                    <td>Blockchain in Education</td>
+                    <td>Dr. Jane Smith</td>
+                    <td>2023</td>
+                    <td><a href="#">Download PDF</a></td>
+                </tr>
+                <tr>
+                    <td>Quantum Computing Advances</td>
+                    <td>Dr. Alan Turing</td>
+                    <td>2025</td>
+                    <td><a href="#">Download PDF</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FacultyPub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
